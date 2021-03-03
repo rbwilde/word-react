@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import {
   Button,
@@ -37,7 +36,6 @@ class LoginButton extends Component {
   logout = () => {
     this.handleMenuClose();
     this.props.authService.logout('/');
-    window.location.reload()
   };
 
   handleMenuOpen = event => this.setState({ menuAnchorEl: event.currentTarget });

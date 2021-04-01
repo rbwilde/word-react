@@ -13,6 +13,7 @@ import PostsManager from './pages/PostsManager';
 
 const styles = theme => ({
   main: {
+    textAlign: 'center',
     padding: theme.spacing(3),
     [theme.breakpoints.down('xs')]: {
       padding: theme.spacing(2),

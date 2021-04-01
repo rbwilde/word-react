@@ -1,8 +1,12 @@
 import React from 'react';
 import {
   Typography,
+  Container,
 } from '@material-ui/core';
 
 export default () => (
-  <Typography variant="h4">Welcome Home!</Typography>
+	<Container>
+  		<Typography variant="h4">word.</Typography>
+  		<Typography variant="subtitle2">Find and save interesting words.</Typography>
+  	</Container>
 );

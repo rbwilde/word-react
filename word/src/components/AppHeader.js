@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {
-  AppBar,
+  Container,
   Button,
   Toolbar,
   Typography,
@@ -17,17 +17,17 @@ const styles = {
 };
 
 const AppHeader = ({ classes }) => (
-  <AppBar position="static">
-    <Toolbar>
-      <Typography variant="h6" color="inherit">
-        My React App
-      </Typography>
+  <Container maxWidth="sm">
+   
+    <Typography variant="h6" color="inherit">
+        word.
+    </Typography>
       <Button color="inherit" component={Link} to="/">Home</Button>
       <Button color="inherit" component={Link} to="/posts">Posts Manager</Button>
       <div className={classes.flex} />
       <LoginButton />
-    </Toolbar>
-  </AppBar>
+    
+  </Container>
 );
 
 export default withStyles(styles)(AppHeader);
